@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Dataset</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .attribute-name {
+        font-weight: bold;
+        color: #2980b9;
+      }
+
+      .target-row {
+        background-color: #fff3cd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heart Disease Dataset - Attribute Information</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Values</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="attribute-name">Age</td>
+          <td>Age of the patient [years]</td>
+          <td>Numeric</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="attribute-name">Sex</td>
+          <td>Sex of the patient</td>
+          <td>M: Male, F: Female</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="attribute-name">ChestPainType</td>
+          <td>Chest pain type</td>
+          <td>
+            TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain,
+            ASY: Asymptomatic
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="attribute-name">RestingBP</td>
+          <td>Resting blood pressure [mm Hg]</td>
+          <td>Numeric</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="attribute-name">Cholesterol</td>
+          <td>Serum cholesterol [mm/dl]</td>
+          <td>Numeric</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="attribute-name">FastingBS</td>
+          <td>Fasting blood sugar</td>
+          <td>1: if FastingBS > 120 mg/dl, 0: otherwise</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="attribute-name">RestingECG</td>
+          <td>Resting electrocardiogram results</td>
+          <td>
+            Normal: Normal, ST: ST-T wave abnormality, LVH: Left ventricular
+            hypertrophy
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="attribute-name">MaxHR</td>
+          <td>Maximum heart rate achieved</td>
+          <td>Numeric value between 60 and 202</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="attribute-name">ExerciseAngina</td>
+          <td>Exercise-induced angina</td>
+          <td>Y: Yes, N: No</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="attribute-name">Oldpeak</td>
+          <td>ST depression induced by exercise</td>
+          <td>Numeric value measured in depression</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="attribute-name">ST_Slope</td>
+          <td>Slope of the peak exercise ST segment</td>
+          <td>Up: upsloping, Flat: flat, Down: downsloping</td>
+        </tr>
+        <tr class="target-row">
+          <td>12</td>
+          <td class="attribute-name">HeartDisease</td>
+          <td>Output class</td>
+          <td>1: heart disease, 0: Normal</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <a
+        target="_blank"
+        href="https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction"
+        >Heart Failure Prediction Dataset</a
+      >
+    </div>
+  </body>
+</html>
