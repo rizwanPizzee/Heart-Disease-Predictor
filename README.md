@@ -25,17 +25,12 @@ This Flask-based web application allows users to input various health metrics an
 ## Model Architecture
 
 - **Algorithms**
-  -  Random Forest Classifier 
-    -  Accuracy: 90%
-  -  Support Vector Machine (SVM)
-    -  Accuracy: 89%
-  -  Logistic Regression
-    -  Accuracy: 88%
-  -  K-Nearest Neighbors (KNN)
-    -  Accuracy: 85%
-  -  Decision Tree Classifier
-    -  Accuracy: 80%
-  
+  -  Random Forest Classifier **(Accuracy: 90%)**
+  -  Support Vector Machine (SVM) (Accuracy: 89%)
+  -  Logistic Regression (Accuracy: 88%)
+  -  K-Nearest Neighbors (KNN) (Accuracy: 85%)
+  -  Decision Tree Classifier (Accuracy: 80%)
+  -  
 - **Preprocessing**: StandardScaler for numerical features, OneHotEncoder for categorical features
 - **Data Split**: 70% training, 30% testing with stratified sampling
 - **Output**: Binary classification (Heart Disease / Heart Normal)
