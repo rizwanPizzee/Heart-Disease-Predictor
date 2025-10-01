@@ -6,6 +6,15 @@ A machine learning-powered web application that predicts the likelihood of heart
 
 This Flask-based web application allows users to input various health metrics and receive a prediction about their heart disease risk. The system uses a trained Random Forest model that analyzes 11 key medical features to provide binary classification results.
 
+## View The Nootbook
+
+- Link 1: https://github.com/rizwanPizzee/Heart-Disease-Predictor-App/blob/master/Data%20Analysis%20and%20ML.ipynb
+- Link 2: https://nbviewer.org/github/rizwanPizzee/Heart-Disease-Predictor-App/blob/master/Data%20Analysis%20and%20ML.ipynb
+
+## Dataset
+
+- **Filename used in the notebook:** `heart.csv` (Link: https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
+
 ## Features
 
 - **Interactive Web Interface**: User-friendly form for inputting medical parameters
@@ -13,6 +22,24 @@ This Flask-based web application allows users to input various health metrics an
 - **Robust Data Processing**: Handles both numerical and categorical input data
 - **Error Handling**: Comprehensive validation and error reporting
 
+## Model Architecture
+
+- **Algorithms**
+  -  Random Forest Classifier 
+    -  Accuracy: 90%
+  -  Support Vector Machine (SVM)
+    -  Accuracy: 89%
+  -  Logistic Regression
+    -  Accuracy: 88%
+  -  K-Nearest Neighbors (KNN)
+    -  Accuracy: 85%
+  -  Decision Tree Classifier
+    -  Accuracy: 80%
+  
+- **Preprocessing**: StandardScaler for numerical features, OneHotEncoder for categorical features
+- **Data Split**: 70% training, 30% testing with stratified sampling
+- **Output**: Binary classification (Heart Disease / Heart Normal)
+- 
 ## Medical Parameters Used
 
 The model evaluates the following health indicators:
@@ -29,12 +56,20 @@ The model evaluates the following health indicators:
 - **Oldpeak**: ST depression induced by exercise
 - **ST_Slope**: Slope of peak exercise ST segment
 
-## Model Architecture
+## Tools / Tech stack
 
-- **Algorithm**: Random Forest Classifier (100 estimators)
-- **Preprocessing**: StandardScaler for numerical features, OneHotEncoder for categorical features
-- **Data Split**: 70% training, 30% testing with stratified sampling
-- **Output**: Binary classification (Heart Disease / Heart Normal)
+- **Language:** Python
+- **Notebook environment:** Jupyter Notebook
+- **Libraries used:**
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
+- **Web Stack:**
+  - `Flask`
+  - `HTML`
+  - `CSS`
 
 ## Project Structure
 
@@ -48,12 +83,8 @@ The model evaluates the following health indicators:
 │   └── about.html     # About page
 ```
 
-## Technology Stack
 
-- **Backend**: Flask (Python web framework)
-- **ML Libraries**: scikit-learn, pandas, matplotlib, seaborn
-- **Frontend**: HTML templates (Jinja2)
 
 ## Model Performance
 
-The Random Forest classifier processes both numerical and categorical features through a preprocessing pipeline that ensures optimal model performance and handles unknown categorical values gracefully.
+The Random Forest classifier processes both numerical and categorical features through a preprocessing pipeline that ensures optimal model performance and handles unknown categorical values gracefully, with the accuracy of 90%.
